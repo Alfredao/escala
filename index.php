@@ -3,12 +3,12 @@
 $data = filter_input(INPUT_GET, 'data');
 
 $timeWeb1 = 'Alfredo, Débora e Fernando';
-$timeWeb2 = 'Jerfeson, Sérgio e Vagner';
+$timeWeb2 = 'Gabriel, Jerfeson, Sérgio e Vagner';
 
 $timeDesktop1 = 'Anderson e Thiago';
 $timeDesktop2 = 'Erik e Julianno';
 
-$date  = new DateTime($data);
+$date  = new \DateTime($data);
 
 $date2 = clone $date;
 $date2->modify('next sunday');
